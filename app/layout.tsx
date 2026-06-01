@@ -5,7 +5,8 @@ import { Header } from "@/components/layout/Header";
 
 export const metadata: Metadata = {
   title: "PrüfAI Website",
-  description: "Technical foundation for the official PrüfAI website.",
+  description:
+    "PrüfAI unterstützt Lernende, Bildungsträger und Organisationen bei KI-gestützter Prüfungsvorbereitung.",
 };
 
 export default function RootLayout({

@@ -1,8 +1,18 @@
 # PrüfAI Website
 
-This repository contains the technical foundation for the official PrüfAI website.
+Official website for PrüfAI, an AI-powered exam and certification preparation platform.
 
-The project is intentionally minimal at this stage. It sets up the application architecture, route structure, reusable component folders, and private server deployment examples. The full Figma-based visual design will be implemented later.
+This repository is built for local development and private-server deployment. It is not configured for Vercel.
+
+## Requirements
+
+- Node.js `>=20.9.0`
+- npm
+- PM2 on the production server
+- Nginx on the production server
+- Git access to this repository
+
+Node.js 22 LTS is recommended for production servers.
 
 ## Tech Stack
 
@@ -11,8 +21,8 @@ The project is intentionally minimal at this stage. It sets up the application a
 - Tailwind CSS
 - ESLint
 - npm
-- PM2 for private server process management
-- Nginx as an example reverse proxy
+- PM2
+- Nginx reverse proxy
 
 ## Local Setup
 
@@ -22,13 +32,13 @@ Install dependencies:
 npm install
 ```
 
-Start the development server:
+Start the local development server:
 
 ```bash
 npm run dev
 ```
 
-Open the local site:
+Open:
 
 ```text
 http://localhost:3000
@@ -46,13 +56,24 @@ Create a production build:
 npm run build
 ```
 
-Start the production server locally:
+Run the built app locally:
 
 ```bash
-npm run start
+npm start
 ```
 
-## Folder Structure
+The production server runs on port `3000`.
+
+## Pages
+
+- `/`
+- `/kontakt`
+- `/impressum`
+- `/datenschutz`
+
+The legal pages currently contain placeholder content and should be finalized before launch in a regulated or commercial setting.
+
+## Project Structure
 
 ```text
 app/
@@ -66,8 +87,8 @@ app/
 components/
   layout/
   sections/
-  ui/
   shared/
+  ui/
 
 lib/
   constants.ts
@@ -89,84 +110,120 @@ deployment/
     ci.yml
 ```
 
-## Current Pages
+## Private Server Deployment
 
-- `/`
-- `/impressum`
-- `/datenschutz`
-- `/kontakt`
-
-The homepage imports and renders placeholder section components in the planned order:
-
-1. Hero
-2. Problem
-3. Solution
-4. Features
-5. How it works
-6. Target groups
-7. Demo
-8. Pricing
-9. CTA
-10. FAQ
-
-## Private Server Deployment Notes
-
-This project is not configured for Vercel. It is intended to be deployed by pulling the repository onto a private server, installing dependencies, building the app, and running it with PM2.
-
-The app is configured to run on port `3000` in production.
-
-Example deployment flow:
+Clone the repository on the server:
 
 ```bash
-cd /path/to/Pr-fAi-website-codex-
+git clone https://github.com/mohbusaidy/Pr-fAi-website-codex-.git
+cd Pr-fAi-website-codex-
+```
+
+Install dependencies and build:
+
+```bash
+npm ci
+npm run build
+```
+
+Start with PM2:
+
+```bash
+pm2 start deployment/ecosystem.config.js
+pm2 save
+```
+
+The app listens on:
+
+```text
+127.0.0.1:3000
+```
+
+## Deploy Script
+
+The deploy helper is:
+
+```bash
 ./deployment/deploy.sh
 ```
 
-The deployment script:
+It:
 
-- pulls the latest code
-- installs dependencies
-- builds the application
-- restarts the PM2 process
+- changes into the repository root
+- pulls the latest code with `git pull --ff-only`
+- installs dependencies with `npm ci`
+- builds the Next.js app
+- starts or reloads the PM2 process
+- saves the PM2 process list
+
+Run it from the repository root or from any path:
+
+```bash
+/path/to/Pr-fAi-website-codex-/deployment/deploy.sh
+```
 
 ## PM2
 
-The PM2 configuration lives in:
+PM2 config:
 
 ```text
 deployment/ecosystem.config.js
 ```
 
-It runs the Next.js production server with:
+The configured process name is:
 
-```bash
-next start -p 3000
+```text
+prufai-website
 ```
 
-To start the app manually on a server:
+Useful commands:
 
 ```bash
-pm2 start deployment/ecosystem.config.js
-```
-
-To restart it:
-
-```bash
+pm2 status
+pm2 logs prufai-website
+pm2 reload prufai-website
 pm2 restart prufai-website
 ```
 
 ## Nginx
 
-A sample Nginx reverse proxy config is included at:
+Example config:
 
 ```text
 deployment/nginx.conf.example
 ```
 
-It forwards public traffic to:
+Copy it into your Nginx sites configuration, update `server_name`, then enable and reload Nginx.
+
+Example:
+
+```bash
+sudo cp deployment/nginx.conf.example /etc/nginx/sites-available/prufai-website
+sudo ln -s /etc/nginx/sites-available/prufai-website /etc/nginx/sites-enabled/prufai-website
+sudo nginx -t
+sudo systemctl reload nginx
+```
+
+The example reverse proxies public traffic to:
 
 ```text
 http://127.0.0.1:3000
 ```
 
-Update the `server_name` value before using it on a real server.
+For HTTPS, add a certificate with your preferred provider, such as Certbot, after DNS points to the server.
+
+## CI
+
+GitHub Actions runs:
+
+```bash
+npm install
+npm run lint
+npm run build
+```
+
+## Notes
+
+- No Figma, API, or deployment secrets are required for this app to run.
+- Environment files are ignored by Git.
+- The current website is suitable for public preview, but legal copy and final product content should be reviewed before a formal launch.
