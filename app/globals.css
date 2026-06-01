@@ -1,18 +1,90 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --color-background: #f7fafc;
+  --color-background-soft: #eef6f8;
+  --color-background-strong: #e5f0f4;
+  --color-surface: #ffffff;
+  --color-card: #ffffff;
+  --color-card-highlight: #f0f8ff;
+  --color-text: #10212b;
+  --color-text-muted: #60707a;
+  --color-text-subtle: #7a8992;
+  --color-primary: #0f6f8f;
+  --color-primary-strong: #0a536c;
+  --color-secondary: #17a398;
+  --color-accent: #f5b94c;
+  --color-border: #d9e5ea;
+  --color-border-strong: #b9cbd4;
+  --shadow-soft: 0 16px 40px rgba(16, 33, 43, 0.08);
+  --shadow-card: 0 10px 28px rgba(16, 33, 43, 0.07);
+  --radius-sm: 0.375rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
+  --section-spacing: clamp(4rem, 8vw, 7rem);
+  --container-width: 72rem;
+}
+
+@theme inline {
+  --color-background: var(--color-background);
+  --color-foreground: var(--color-text);
+  --color-primary: var(--color-primary);
+  --color-secondary: var(--color-secondary);
+  --color-accent: var(--color-accent);
+  --color-muted: var(--color-text-muted);
+  --color-border: var(--color-border);
+  --color-card: var(--color-card);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   margin: 0;
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--color-background);
+  color: var(--color-text);
+  font-family:
+    Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  text-rendering: optimizeLegibility;
 }
 
 a {
   color: inherit;
   text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: var(--color-text);
+  font-weight: 700;
+  line-height: 1.08;
+}
+
+p {
+  margin: 0;
+}
+
+::selection {
+  background: color-mix(in srgb, var(--color-primary) 18%, white);
+}
+
+.section-spacing {
+  padding-block: var(--section-spacing);
+}
+
+.section-border {
+  border-bottom: 1px solid var(--color-border);
+}
+
+.text-muted {
+  color: var(--color-text-muted);
 }

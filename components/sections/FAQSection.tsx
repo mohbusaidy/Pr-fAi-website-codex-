@@ -1,12 +1,5 @@
-import { SectionHeading } from "@/components/shared/SectionHeading";
-import { Container } from "@/components/ui/Container";
+import { SectionPlaceholder } from "./SectionPlaceholder";
 
 export function FAQSection() {
-  return (
-    <section className="py-16">
-      <Container>
-        <SectionHeading title="FAQSection" />
-      </Container>
-    </section>
-  );
+  return <SectionPlaceholder id="faq" name="FAQSection" tone="soft" />;
 }
