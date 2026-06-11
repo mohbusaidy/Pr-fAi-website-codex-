@@ -1,28 +1,28 @@
 @import "tailwindcss";
 
 :root {
-  --color-background: #f7fafc;
-  --color-background-soft: #eef6f8;
-  --color-background-strong: #e5f0f4;
+  --color-background: #f6f7f8;
+  --color-background-soft: #f1f5f9;
+  --color-background-strong: #e7eef3;
   --color-surface: #ffffff;
   --color-card: #ffffff;
-  --color-card-highlight: #f0f8ff;
-  --color-text: #10212b;
-  --color-text-muted: #60707a;
-  --color-text-subtle: #7a8992;
-  --color-primary: #0f6f8f;
-  --color-primary-strong: #0a536c;
-  --color-secondary: #17a398;
-  --color-accent: #f5b94c;
-  --color-border: #d9e5ea;
-  --color-border-strong: #b9cbd4;
-  --shadow-soft: 0 16px 40px rgba(16, 33, 43, 0.08);
-  --shadow-card: 0 10px 28px rgba(16, 33, 43, 0.07);
+  --color-card-highlight: #eef7ff;
+  --color-text: #0d161b;
+  --color-text-muted: #475569;
+  --color-text-subtle: #64748b;
+  --color-primary: #1392ec;
+  --color-primary-strong: #0874c4;
+  --color-secondary: #22c55e;
+  --color-accent: #f59e0b;
+  --color-border: #e7eef3;
+  --color-border-strong: #cbd5e1;
+  --shadow-soft: 0 18px 48px rgba(15, 23, 42, 0.1);
+  --shadow-card: 0 12px 32px rgba(15, 23, 42, 0.08);
   --radius-sm: 0.375rem;
   --radius-md: 0.5rem;
   --radius-lg: 0.75rem;
-  --section-spacing: clamp(4rem, 8vw, 7rem);
-  --container-width: 72rem;
+  --section-spacing: clamp(4rem, 7vw, 6rem);
+  --container-width: 70rem;
 }
 
 @theme inline {
@@ -53,6 +53,7 @@ body {
   font-size: 16px;
   line-height: 1.6;
   text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
 }
 
 a {

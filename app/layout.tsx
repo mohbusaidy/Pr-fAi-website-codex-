@@ -2,11 +2,12 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { Footer } from "@/components/layout/Footer";
 import { Header } from "@/components/layout/Header";
+import { LanguageProvider } from "@/components/providers/LanguageProvider";
 
 export const metadata: Metadata = {
-  title: "PrüfAI Website",
+  title: "PrüfAI | Digital Exam Platform",
   description:
-    "PrüfAI unterstützt Lernende, Bildungsträger und Organisationen bei KI-gestützter Prüfungsvorbereitung.",
+    "PrüfAI helps institutions conduct exams digitally, securely, and efficiently through structured administration, submission, and evaluation workflows.",
 };
 
 export default function RootLayout({
@@ -15,11 +16,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="de">
+    <html lang="en">
       <body>
-        <Header />
-        <main>{children}</main>
-        <Footer />
+        <LanguageProvider>
+          <Header />
+          <main>{children}</main>
+          <Footer />
+        </LanguageProvider>
       </body>
     </html>
   );

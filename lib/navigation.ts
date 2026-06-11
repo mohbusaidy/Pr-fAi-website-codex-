@@ -1,14 +1,14 @@
 export const mainNavigation = [
-  { label: "Vorteile", href: "#vorteile" },
-  { label: "Funktionen", href: "#funktionen" },
-  { label: "Ablauf", href: "#ablauf" },
-  { label: "Zielgruppen", href: "#zielgruppen" },
-  { label: "Preise", href: "#preise" },
-  { label: "FAQ", href: "#faq" },
-];
+  { key: "platform", href: "#platform" },
+  { key: "features", href: "#features" },
+  { key: "process", href: "#process" },
+  { key: "institutions", href: "#institutions" },
+  { key: "faq", href: "#faq" },
+  { key: "contact", href: "/kontakt#demo-form" },
+] as const;
 
 export const footerNavigation = [
   { label: "Impressum", href: "/impressum" },
   { label: "Datenschutz", href: "/datenschutz" },
-  { label: "Kontakt", href: "/kontakt" },
+  { label: "Contact", href: "/kontakt#demo-form" },
 ];

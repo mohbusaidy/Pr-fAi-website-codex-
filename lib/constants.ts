@@ -1,5 +1,5 @@
 export const siteConfig = {
   name: "PrüfAI",
-  description: "KI-gestützte Prüfungsvorbereitung und Lernanalyse für Bildungsteams.",
+  description: "Digital exam platform for secure exam execution, administration, submission, and evaluation workflows.",
   url: "https://example.com",
 };
