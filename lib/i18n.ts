@@ -5,11 +5,10 @@ export const demoFormHref = "/kontakt#demo-form";
 export const dictionaries = {
   en: {
     nav: {
-      platform: "Platform",
-      features: "Features",
-      process: "Process",
-      institutions: "Institutions",
-      faq: "FAQ",
+      home: "Home",
+      product: "Product",
+      resources: "Resources",
+      company: "Company",
       contact: "Contact",
       requestDemo: "Request demo",
       openNavigation: "Open navigation",
@@ -18,12 +17,52 @@ export const dictionaries = {
       badge: "Digital exam platform",
       title: "Digital exams, simplified.",
       description:
-        "PrüfAI helps institutions conduct exams digitally, securely, and efficiently — from candidate management to structured test execution, submission, and evaluation workflows.",
+        "PrüfAI helps institutions conduct exams digitally, securely, and efficiently — from candidate management to structured test execution, submission, and evaluation workflows. Automated assessment for German exams, A1–C2, and ‘Leben in Deutschland’ workflows.",
       primary: "Request demo",
-      secondary: "Explore platform",
+      secondary: "Request demo",
       points: ["Secure digital test sessions", "Candidate and exam management", "Structured submission and evaluation workflows"],
       cardTitle: "Exam operations in one view",
       cardText: "Interface orientation for sessions, candidates, submissions, and review status.",
+    },
+    productPage: {
+      metadataTitle: "Product | PrüfAI",
+      badge: "Product",
+      headline: "Automated language test assessment.",
+      subtitle:
+        "PrüfAI evaluates language tests in real time — objectively, consistently, and according to clearly defined assessment criteria. This reduces human error and shortens evaluation time from days to seconds.",
+      introduction:
+        "PrüfAI provides fully automated, AI-supported German exams from A1 to C2 and digital workflows for the ‘Leben in Deutschland’ test — designed for institutions that need fast, cost-efficient, and standards-aligned exam processes.",
+      cards: [
+        [
+          "Precise & fair results",
+          "Our AI is powered by a capable language model that can evaluate nuances in grammar, vocabulary, pronunciation, and fluency. This helps institutions achieve assessments that are fair, traceable, and transparent.",
+        ],
+        [
+          "Dynamic question generation",
+          "PrüfAI can generate new test questions and tasks automatically, adapted to language level, topic area, and desired difficulty. This helps institutions keep exams current and relevant.",
+        ],
+        [
+          "Seamless integration into existing systems",
+          "Whether you use a learning management system, test portal, or training software, PrüfAI can be integrated into your existing infrastructure. Institutions can keep established processes while adding modern AI assessment capabilities.",
+        ],
+        [
+          "Efficiency for test centers & institutions",
+          "Automated assessment and question generation reduce administrative effort and free exam teams to focus on participants, operations, and quality assurance. This increases capacity and lowers operational costs.",
+        ],
+        [
+          "Ready-to-use language tests",
+          "In addition to assessment workflows, PrüfAI can provide complete, ready-to-use language tests. These can be used immediately or adapted to institutional requirements — ideal for pilots and fast implementation.",
+        ],
+        [
+          "Standards-aligned digital exams",
+          "PrüfAI supports structured German exam workflows from A1 to C2 as well as ‘Leben in Deutschland’ test scenarios, with a focus on consistency, documentation, and institutional requirements.",
+        ],
+      ],
+      cta: {
+        title: "Want to automate your exam workflow?",
+        text: "Request a demo and see how PrüfAI can support your institution’s digital assessment process.",
+        button: "Request demo",
+      },
     },
     problem: {
       badge: "Operational challenge",
@@ -44,7 +83,7 @@ export const dictionaries = {
       dashboard: "Institution dashboard",
       overview: "Exam delivery overview",
       badge: "Platform",
-      explore: "Explore features",
+      explore: "Request demo",
       request: "Request demo",
       points: [
         "Set up exam formats and sessions",
@@ -74,7 +113,7 @@ export const dictionaries = {
       badge: "Process",
       title: "How PrüfAI works.",
       description: "A structured workflow for setup, test execution, digital submissions, and evaluation support.",
-      preview: "View platform preview",
+      preview: "Request demo",
       steps: [
         ["Set up the exam", "Define the exam format, session details, participants, and access settings."],
         ["Conduct the test", "Candidates complete the exam through a clear digital test-taking interface."],
@@ -127,16 +166,16 @@ export const dictionaries = {
       title: "Ready to modernize your exam workflow?",
       description: "Let’s discuss how PrüfAI can support your institution’s digital exam processes.",
       primary: "Request demo",
-      secondary: "Read FAQ",
+      secondary: "Request demo",
     },
     faq: {
       title: "Questions institutions often ask.",
       description: "Clear answers about PrüfAI’s role in digital exam execution, administration, and candidate workflows.",
       contact: "Contact us",
       items: [
-        ["Is PrüfAI an exam preparation platform?", "No. PrüfAI is focused on digital exam execution and administration. It does not provide exam preparation, language training, or learning plans."],
+        ["Is PrüfAI built for candidate training?", "No. PrüfAI is focused on digital exam execution, assessment, and administration for institutions."],
         ["Who is PrüfAI built for?", "PrüfAI is built for institutions, testing providers, schools, course providers, and organizations that need to conduct structured digital exams."],
-        ["Can PrüfAI support language or certification exams?", "Yes. PrüfAI can support digital workflows for standardized exam formats, including language or certification-related exams. However, it is not a language learning platform."],
+        ["Can PrüfAI support language or certification exams?", "Yes. PrüfAI can support digital workflows for standardized exam formats, including language or certification-related exams."],
         ["Does PrüfAI replace examiners?", "No. PrüfAI supports the digital exam workflow. Human review, institutional rules, and examiner decisions can remain part of the process."],
         ["Can candidates take exams through PrüfAI?", "Yes. Candidates can complete exams through a guided digital test-taking interface when invited by an institution."],
       ],
@@ -174,11 +213,10 @@ export const dictionaries = {
   },
   de: {
     nav: {
-      platform: "Produkt",
-      features: "Funktionen",
-      process: "Prozess",
-      institutions: "Institutionen",
-      faq: "FAQ",
+      home: "Start",
+      product: "Produkt",
+      resources: "Ressourcen",
+      company: "Unternehmen",
       contact: "Kontakt",
       requestDemo: "Demo anfragen",
       openNavigation: "Navigation öffnen",
@@ -187,12 +225,52 @@ export const dictionaries = {
       badge: "Digitale Prüfungsplattform",
       title: "Digitale Prüfungen, einfach umgesetzt.",
       description:
-        "PrüfAI unterstützt Institutionen dabei, Prüfungen digital, sicher und effizient durchzuführen — von Kandidatenverwaltung bis zu strukturierter Prüfungsdurchführung, digitalen Abgaben und Bewertungsprozessen.",
+        "PrüfAI unterstützt Institutionen dabei, Prüfungen digital, sicher und effizient durchzuführen — von Kandidatenverwaltung bis zu strukturierter Prüfungsdurchführung, digitalen Abgaben und Bewertungsprozessen. Automatisierte Bewertung für Deutschprüfungen von A1 bis C2 und Abläufe rund um „Leben in Deutschland“.",
       primary: "Demo anfragen",
-      secondary: "Produkt ansehen",
+      secondary: "Demo anfragen",
       points: ["Sichere Prüfungssitzungen", "Kandidaten- und Prüfungsverwaltung", "Strukturierte Abgaben und Bewertungsprozesse"],
       cardTitle: "Prüfungsabläufe im Blick",
       cardText: "Oberflächenorientierung für Sitzungen, Kandidaten, Abgaben und Bewertungsstatus.",
+    },
+    productPage: {
+      metadataTitle: "Produkt | PrüfAI",
+      badge: "Produkt",
+      headline: "Automatisierte Sprachtest-Bewertung.",
+      subtitle:
+        "PrüfAI bewertet Sprachtests in Echtzeit — objektiv, konsistent und nach klar definierten Bewertungskriterien. Das reduziert menschliche Fehler und verkürzt die Auswertungszeit von Tagen auf Sekunden.",
+      introduction:
+        "PrüfAI bietet vollautomatisierte, KI-gestützte Deutschprüfungen von A1 bis C2 sowie digitale Abläufe für den Test „Leben in Deutschland“ — für Institutionen, die schnelle, kosteneffiziente und standardkonforme Prüfungsprozesse benötigen.",
+      cards: [
+        [
+          "Präzise & faire Ergebnisse",
+          "Unsere KI basiert auf einem leistungsstarken Sprachmodell, das Nuancen in Grammatik, Wortschatz, Aussprache und Sprachfluss erkennen kann. So unterstützen wir faire, nachvollziehbare und transparente Bewertungen.",
+        ],
+        [
+          "Dynamische Fragen-Generierung",
+          "PrüfAI kann neue Testfragen und Aufgaben automatisch erstellen — angepasst an Sprachlevel, Themenbereich und gewünschte Schwierigkeitsstufe. So bleiben Prüfungen aktuell und relevant.",
+        ],
+        [
+          "Nahtlose Integration in bestehende Systeme",
+          "Ob vorhandenes LMS, Test-Portal oder Schulungssoftware: PrüfAI lässt sich in bestehende Infrastrukturen integrieren. Institutionen können etablierte Prozesse beibehalten und moderne KI-Bewertung ergänzen.",
+        ],
+        [
+          "Effizienz für Prüfungszentren & Institutionen",
+          "Automatisierte Bewertung und Fragen-Generierung reduzieren administrativen Aufwand und schaffen mehr Zeit für Teilnehmende, Abläufe und Qualitätssicherung. Das steigert Kapazität und senkt Kosten.",
+        ],
+        [
+          "Bereitstellung fertiger Sprachtests",
+          "Neben Bewertungsprozessen kann PrüfAI komplette, einsatzbereite Sprachtests bereitstellen. Diese können sofort genutzt oder individuell angepasst werden — ideal für Pilotprojekte und schnelle Implementierungen.",
+        ],
+        [
+          "Standardkonforme digitale Prüfungen",
+          "PrüfAI unterstützt strukturierte digitale Prüfungsabläufe für Deutschprüfungen von A1 bis C2 sowie Szenarien rund um den Test „Leben in Deutschland“ — mit Fokus auf Konsistenz, Dokumentation und institutionelle Anforderungen.",
+        ],
+      ],
+      cta: {
+        title: "Möchten Sie Ihren Prüfungsprozess automatisieren?",
+        text: "Fordern Sie eine Demo an und erfahren Sie, wie PrüfAI den digitalen Bewertungsprozess Ihrer Institution unterstützen kann.",
+        button: "Demo anfragen",
+      },
     },
     problem: {
       badge: "Operative Herausforderung",
@@ -213,7 +291,7 @@ export const dictionaries = {
       dashboard: "Institutionelles Dashboard",
       overview: "Übersicht zur Prüfungsdurchführung",
       badge: "Plattform",
-      explore: "Funktionen ansehen",
+      explore: "Demo anfragen",
       request: "Demo anfragen",
       points: [
         "Prüfungsformate und Sitzungen einrichten",
@@ -243,7 +321,7 @@ export const dictionaries = {
       badge: "Prozess",
       title: "So funktioniert PrüfAI.",
       description: "Ein strukturierter Ablauf für Einrichtung, digitale Prüfungsdurchführung, Abgaben und Bewertungsunterstützung.",
-      preview: "Plattformvorschau ansehen",
+      preview: "Demo anfragen",
       steps: [
         ["Prüfung einrichten", "Prüfungsformat, Sitzungsdetails, Kandidaten und Zugriffseinstellungen definieren."],
         ["Prüfung durchführen", "Kandidaten absolvieren die Prüfung über eine klare digitale Testoberfläche."],
@@ -296,7 +374,7 @@ export const dictionaries = {
       title: "Bereit, Ihren Prüfungsprozess zu modernisieren?",
       description: "Lassen Sie uns besprechen, wie PrüfAI die digitalen Prüfungsprozesse Ihrer Institution unterstützen kann.",
       primary: "Demo anfragen",
-      secondary: "FAQ lesen",
+      secondary: "Demo anfragen",
     },
     faq: {
       title: "Häufige Fragen von Institutionen.",

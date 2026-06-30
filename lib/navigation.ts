@@ -1,9 +1,8 @@
 export const mainNavigation = [
-  { key: "platform", href: "#platform" },
-  { key: "features", href: "#features" },
-  { key: "process", href: "#process" },
-  { key: "institutions", href: "#institutions" },
-  { key: "faq", href: "#faq" },
+  { key: "home", href: "/" },
+  { key: "product", href: "/produkt" },
+  { key: "resources", href: "/#faq" },
+  { key: "company", href: "/#institutions" },
   { key: "contact", href: "/kontakt#demo-form" },
 ] as const;
 

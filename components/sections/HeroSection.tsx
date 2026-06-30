@@ -21,7 +21,7 @@ export function HeroSection() {
             <p className="mt-6 max-w-2xl text-base text-[var(--color-text-muted)] sm:text-lg">{t.hero.description}</p>
             <div className="mt-8 flex flex-wrap gap-3">
               <ButtonLink href={demoFormHref} size="lg">{t.hero.primary}</ButtonLink>
-              <ButtonLink href="#platform" size="lg" variant="outline">{t.hero.secondary}</ButtonLink>
+              <ButtonLink href={demoFormHref} size="lg" variant="outline">{t.hero.secondary}</ButtonLink>
             </div>
             <dl className="mt-10 grid max-w-2xl gap-4 border-t border-[var(--color-border)] pt-6 sm:grid-cols-3">
               {t.hero.points.map((point) => (

@@ -32,7 +32,7 @@ export function SolutionSection() {
           <div className="order-1 lg:order-2">
             <SectionHeading eyebrow={t.platform.eyebrow} title={t.platform.title} description={t.platform.description} />
             <div className="mt-8 flex flex-wrap gap-3">
-              <ButtonLink href="#features">{t.platform.explore}</ButtonLink>
+              <ButtonLink href={demoFormHref}>{t.platform.explore}</ButtonLink>
               <ButtonLink href={demoFormHref} variant="outline">{t.platform.request}</ButtonLink>
             </div>
           </div>

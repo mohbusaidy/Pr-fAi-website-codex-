@@ -6,6 +6,7 @@ import { Badge } from "@/components/ui/Badge";
 import { ButtonLink } from "@/components/ui/Button";
 import { Card } from "@/components/ui/Card";
 import { Container } from "@/components/ui/Container";
+import { demoFormHref } from "@/lib/i18n";
 
 export function HowItWorksSection() {
   const { t } = useI18n();
@@ -17,7 +18,7 @@ export function HowItWorksSection() {
           <div>
             <Badge variant="primary">{t.process.badge}</Badge>
             <SectionHeading title={t.process.title} description={t.process.description} />
-            <div className="mt-8"><ButtonLink href="#demo" variant="outline">{t.process.preview}</ButtonLink></div>
+            <div className="mt-8"><ButtonLink href={demoFormHref} variant="outline">{t.process.preview}</ButtonLink></div>
           </div>
           <div className="relative">
             <div className="absolute left-5 top-8 hidden h-[calc(100%-4rem)] w-px bg-[var(--color-border-strong)] sm:block" />

@@ -1,6 +1,6 @@
 # PrüfAI Website
 
-Official website for PrüfAI, an AI-powered exam and certification preparation platform.
+Official website for PrüfAI, an AI-powered digital exam and assessment platform for institutions.
 
 This repository is built for local development and private-server deployment. It is not configured for Vercel.
 
@@ -67,6 +67,7 @@ The production server runs on port `3000`.
 ## Pages
 
 - `/`
+- `/produkt`
 - `/kontakt`
 - `/impressum`
 - `/datenschutz`

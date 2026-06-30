@@ -22,7 +22,6 @@ export function CTASection() {
             </div>
             <div className="flex flex-col gap-3 sm:flex-row lg:flex-col">
               <ButtonLink className="bg-white text-[var(--color-primary)] hover:bg-[var(--color-background-soft)]" href={demoFormHref} size="lg">{t.cta.primary}</ButtonLink>
-              <ButtonLink className="border-white/40 text-white hover:border-white hover:text-white" href="#faq" size="lg" variant="outline">{t.cta.secondary}</ButtonLink>
             </div>
           </div>
         </Card>
