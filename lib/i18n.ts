@@ -94,6 +94,18 @@ export const dictionaries = {
         "Keep administrators informed through dashboards",
       ],
     },
+    sustainability: {
+      eyebrow: "Sustainable impact",
+      title: "More resource-conscious exam infrastructure.",
+      body:
+        "By digitizing language exams and ‘Leben in Deutschland’ test workflows, PrüfAI can help institutions reduce paper-based processes, manual logistics, and repetitive administrative work.\n\nInstead of printing, distributing, collecting, storing, and manually transferring exam documents, PrüfAI supports a more digital and resource-conscious exam infrastructure. This can reduce paper usage, lower operational effort, and make exam processes easier to scale across institutions and locations.\n\nOur sustainability contribution is practical and process-driven: less paper, fewer manual handovers, reusable digital exam structures, and more efficient exam operations.",
+      cards: [
+        ["Less paper", "Digital test-taking, submissions, and evaluation workflows can reduce the need for printed exam documents."],
+        ["Less manual logistics", "Exam materials no longer need to be physically distributed, collected, transferred, and archived in the same way."],
+        ["Reusable digital structures", "Institutions can reuse exam formats, workflows, and digital structures across sessions and locations."],
+        ["More efficient operations", "Digital administration can reduce repetitive manual work and help exam teams manage processes more efficiently."],
+      ],
+    },
     features: {
       eyebrow: "Features",
       title: "Built for modern exam operations.",
@@ -300,6 +312,18 @@ export const dictionaries = {
         "Digitale Abgaben sammeln",
         "Strukturierte Bewertungsprozesse unterstützen",
         "Administration über Dashboards informiert halten",
+      ],
+    },
+    sustainability: {
+      eyebrow: "Nachhaltiger Impact",
+      title: "Ressourcenschonendere Prüfungsinfrastruktur.",
+      body:
+        "Durch die Digitalisierung von Sprachtests und „Leben in Deutschland“-Prüfungsprozessen kann PrüfAI Institutionen dabei unterstützen, papierbasierte Abläufe, manuelle Logistik und wiederkehrende Verwaltungsaufgaben zu reduzieren.\n\nAnstatt Prüfungsunterlagen zu drucken, zu verteilen, einzusammeln, zu lagern und manuell weiterzuverarbeiten, ermöglicht PrüfAI eine stärker digitale und ressourcenschonende Prüfungsinfrastruktur. Dadurch können Papierverbrauch, organisatorischer Aufwand und materialintensive Prozesse reduziert werden.\n\nUnser nachhaltiger Beitrag ist bewusst praxisnah: weniger Papier, weniger manuelle Übergaben, wiederverwendbare digitale Prüfungsstrukturen und effizientere Abläufe im Prüfungswesen.",
+      cards: [
+        ["Weniger Papier", "Digitale Testdurchführung, Abgaben und Bewertungsprozesse können den Bedarf an gedruckten Prüfungsunterlagen reduzieren."],
+        ["Weniger manuelle Logistik", "Prüfungsmaterialien müssen nicht mehr im gleichen Umfang physisch verteilt, eingesammelt, weitergeleitet und archiviert werden."],
+        ["Wiederverwendbare digitale Strukturen", "Institutionen können Prüfungsformate, Abläufe und digitale Strukturen über mehrere Sitzungen und Standorte hinweg wiederverwenden."],
+        ["Effizientere Abläufe", "Digitale Verwaltung kann wiederkehrende manuelle Arbeit reduzieren und Prüfungsteams dabei unterstützen, Prozesse effizienter zu steuern."],
       ],
     },
     features: {

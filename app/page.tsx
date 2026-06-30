@@ -7,6 +7,7 @@ import { HowItWorksSection } from "@/components/sections/HowItWorksSection";
 import { PricingSection } from "@/components/sections/PricingSection";
 import { ProblemSection } from "@/components/sections/ProblemSection";
 import { SolutionSection } from "@/components/sections/SolutionSection";
+import { SustainabilitySection } from "@/components/sections/SustainabilitySection";
 import { TargetGroupsSection } from "@/components/sections/TargetGroupsSection";
 
 export default function HomePage() {
@@ -15,6 +16,7 @@ export default function HomePage() {
       <HeroSection />
       <ProblemSection />
       <SolutionSection />
+      <SustainabilitySection />
       <FeaturesSection />
       <HowItWorksSection />
       <TargetGroupsSection />
