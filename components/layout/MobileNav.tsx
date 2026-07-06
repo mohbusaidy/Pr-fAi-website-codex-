@@ -5,6 +5,7 @@ import { mainNavigation } from "@/lib/navigation";
 import { demoFormHref } from "@/lib/i18n";
 import { useI18n } from "@/components/providers/LanguageProvider";
 import { LanguageSwitch } from "@/components/shared/LanguageSwitch";
+import { Logo } from "@/components/shared/Logo";
 import { buttonClassNames } from "@/components/ui/Button";
 
 export function MobileNav() {
@@ -21,7 +22,10 @@ export function MobileNav() {
         </span>
       </summary>
       <div className="absolute right-0 top-12 z-30 w-64 rounded-[var(--radius-lg)] border border-[var(--color-border)] bg-white p-4 shadow-[var(--shadow-card)]">
-        <div className="mb-3 flex justify-end">
+        <div className="mb-3 flex items-center justify-between gap-3">
+          <Link href="/" aria-label="PrüfAI home">
+            <Logo className="h-8 w-28" />
+          </Link>
           <LanguageSwitch />
         </div>
         <nav className="grid gap-2">

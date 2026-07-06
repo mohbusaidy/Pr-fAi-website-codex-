@@ -16,8 +16,8 @@ export function Header() {
   return (
     <header className="sticky top-0 z-20 border-b border-[var(--color-border)] bg-white/95 backdrop-blur">
       <Container className="flex h-16 items-center justify-between gap-5">
-        <Link href="/" aria-label="PrüfAI home">
-          <Logo />
+        <Link className="shrink-0" href="/" aria-label="PrüfAI home">
+          <Logo priority />
         </Link>
         <nav className="hidden items-center gap-6 lg:flex">
           {mainNavigation.map((item) => (
